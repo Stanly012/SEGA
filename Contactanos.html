@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NVIDIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco */
+        }
+        header {
+            background-color: #76B900; /* Verde NVIDIA */
+            color: black;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: black; /* Texto negro */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2em;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #222; /* Fondo gris oscuro */
+            padding: 1.5em;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-top: 1em;
+            color: #76B900; /* Verde NVIDIA */
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 0.5em;
+            margin-top: 0.5em;
+            border: 1px solid #76B900; /* Borde verde */
+            border-radius: 4px;
+            background-color: #333; /* Fondo gris oscuro */
+            color: white;
+        }
+        button {
+            background-color: #76B900; /* Verde NVIDIA */
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #5a8c00; /* Verde más oscuro */
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #111; /* Fondo negro */
+            margin-top: 2em;
+            color: #76B900; /* Verde NVIDIA */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto - NVIDIA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna pregunta o necesitas soporte, por favor completa el siguiente formulario:</p>
+            <form action="enviar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 NVIDIA Corporation. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

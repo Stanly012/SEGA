@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5rem;
+            color: #76b900; /* NVIDIA green */
+        }
+        .product {
+            margin: 20px;
+            text-align: center;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #76b900;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .product h2 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+        }
+        .product a {
+            text-decoration: none;
+            color: #76b900;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .product a:hover {
+            color: #ffffff;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Productos</h1>
+    <div class="container">
+        <div class="product">
+            <h2>Tarjeta Gráfica NVIDIA GeForce RTX 4090</h2>
+            <img src="imagenes/4090.png" alt="Imagen de la NVIDIA GeForce RTX 4090">
+        </div>
+        <div class="product">
+            <h2>Tarjeta Gráfica NVIDIA GeForce RTX 4080</h2>
+            <img src="imagenes/nvidia.jpg" alt="Imagen de la NVIDIA GeForce RTX 4080">
+        </div>
+        <div class="product">
+            <h2>Tarjeta Gráfica NVIDIA GeForce RTX 4070</h2>
+            <img src="imagenes/4070.jpg" alt="Imagen de la NVIDIA GeForce RTX 4070">
+        </div>
+        <div class="product">
+            <h2>Tarjeta Gráfica NVIDIA GeForce RTX 4060</h2>
+            <img src="imagenes/4060.jpg" alt="Imagen de la NVIDIA GeForce RTX 4060">
+        </div>
+        <div class="product">
+            <h2>Tarjeta Gráfica NVIDIA GeForce RTX 3050</h2>
+            <img src="imagenes/3050.jpg" alt="Imagen de la NVIDIA GeForce RTX 3050">
+        </div>
+        <div class="product">
+            <h2>Tarjeta Gráfica NVIDIA GeForce GTX 1660</h2>
+            <img src="imagenes/1660.jpg" alt="Imagen de la NVIDIA GeForce GTX 1660">
+        </div>
+    </div>
+    <div class="product">
+        <h2><a href="index.html">Volver a la página principal</a></h2>
+    </div>
+</body>
+</html>
